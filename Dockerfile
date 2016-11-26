@@ -22,7 +22,7 @@ ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
 RUN apt-get update
 RUN apt-get install -y git
 
-RUN npm install -g grunt-cli@"1.2.0" gulp@"3.9.1" bower@"1.8.0" cordova@"6.4.0" ionic@"2.1.12"
+RUN npm install -g grunt-cli@"1.2.0" gulp@"3.9.1" bower@"1.8.0" cordova@"6.4.0" ionic@"2.1.13"
 
 RUN npm cache clear
 
@@ -36,8 +36,8 @@ var/tmp/*
 RUN cd /opt && wget https://dl.google.com/android/android-sdk_r24.4.1-linux.tgz && \
   tar xzf android-sdk_r24.4.1-linux.tgz && \
   rm android-sdk_r24.4.1-linux.tgz && \
-    (echo y | android-sdk-linux/tools/android update sdk -u -a -t 1,2,3,4,8,12,30,31,32,33,34,36,128,163,170,171,172,174
-,175)
+    (echo y | android-sdk-linux/tools/android update sdk -u -a -t 1,2,3,5,9,13,31,32,33,34,35,37,129,164,171,172,173,174
+,175,176,177)
 
 
 ENV ANDROID_HOME /opt/android-sdk-linux
