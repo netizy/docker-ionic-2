@@ -20,7 +20,7 @@ ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
 RUN apt-get update
 RUN apt-get install -y git
 
-RUN npm install -g grunt-cli@"1.2.0" gulp@"3.9.1" bower@"1.8.0" cordova@"6.4.0" ionic@"2.1.13"
+RUN npm install -g grunt-cli@"1.2.0" gulp@"3.9.1" bower@"1.8.0" cordova@"6.4.0" ionic@"2.1.17"
 
 RUN npm cache clear
 
