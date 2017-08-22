@@ -23,7 +23,8 @@ RUN apt-get install -y unzip
 
 RUN npm install -g grunt-cli@"1.2.0" gulp@"3.9.1" bower@"1.8.0" cordova@"7.0.1" ionic@"3.9.2"
 
-RUN npm cache clear
+RUN npm cache verify
+#RUN npm cache clear
 
 # Install Deps
 RUN dpkg --add-architecture i386 && apt-get update && apt-get install -y --force-yes expect git wget libc6-i386 lib32stdc++6 lib32gcc1 lib32ncurses5 lib32z1 python curl libqt5widgets5 && apt-get clean && rm -fr /var/lib/apt/lists/* /tmp/* /var/tmp/*
